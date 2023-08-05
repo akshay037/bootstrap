@@ -1,0 +1,43 @@
+{
+    "name": "demo gitdeploy",
+    "display" : "standalone",
+    "background_color" : "purple",
+    "start_url" : "/demo",
+    "icons" : [
+        {
+            "src" : "assets/icons/logo-48x48.png",
+            "type" : "image/png",
+            "sizes" : "48x48"
+        },
+        {
+            "src" : "assets/icons/logo-72x72.png",
+            "type" : "image/png",
+            "sizes" : "72x72"
+        },
+        {
+            "src" : "assets/icons/logo-96x96.png",
+            "type" : "image/png",
+            "sizes" : "96x96"
+        },
+        {
+            "src" : "assets/icons/logo-144x144.png",
+            "type" : "image/png",
+            "sizes" : "144x144"
+        },
+        {
+            "src" : "assets/icons/logo-192x192.png",
+            "type" : "image/png",
+            "sizes" : "192x192"
+        },
+        {
+            "src" : "assets/icons/logo-512x512.png",
+            "type" : "image/png",
+            "sizes" : "512x512"
+        }
+
+    ]
+
+
+
+
+}
