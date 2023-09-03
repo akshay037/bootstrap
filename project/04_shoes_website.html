@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+        <div class="container-fluid my-3">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-indicators fs-3">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner text-center">
+
+                    <div class="carousel-item active ">
+                        <img class='img-fluid rounded-3' src="https://source.unsplash.com/1600x450/?shoes,nike"
+                            alt="" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <button type="button" class="btn btn-sm px-5 btn-danger">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <img class='img-fluid rounded-3' src="https://source.unsplash.com/1600x450/?shoes,newbalance"
+                            alt="" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <button type="button" class="btn btn-sm px-5 btn-danger">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <img class='img-fluid rounded-3' src="https://source.unsplash.com/1600x450/?shoes,yeeze"
+                            alt="" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <button type="button" class="btn btn-sm px-5 btn-danger">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <img class='img-fluid rounded-3' src="https://source.unsplash.com/1600x450/?shoes,lv" alt="" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <button type="button" class="btn btn-sm px-5 btn-danger">Buy Now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+        </div>
+
+
+        <div class="container  my-1">
+            <div class="card alert alert-danger">
+                <div class="card-body">
+                    <p class="fs-4 text-center text-dark mt-1 mb-0">GET brilient offer with us and blah blah blah blah
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <strong class='fs-4'>{item.title}</strong>
+                            <br />
+                            <strong>{item.desc}</strong>
+                        </div>
+                        <div>
+                            <img class='img-fluid' src="https://source.unsplash.com/495x170/?shoes,nike" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+
+                        <div class="card-footer d-flex justify-content-center align-items-center">
+                            <span>Add quantity :- </span>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">+1</button>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">-1</button>
+                            <button type="button" class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <strong class='fs-4'>{item.title}</strong>
+                            <br />
+                            <strong>{item.desc}</strong>
+                        </div>
+                        <div>
+                            <img class='img-fluid' src="https://source.unsplash.com/495x170/?newbalance,nike,shoes"
+                                alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+
+                        <div class="card-footer d-flex justify-content-center align-items-center">
+                            <span>Add quantity :- </span>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">+1</button>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">-1</button>
+                            <button type="button" class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <strong class='fs-4'>{item.title}</strong>
+                            <br />
+                            <strong>{item.desc}</strong>
+                        </div>
+                        <div>
+                            <img class='img-fluid' src="https://source.unsplash.com/495x170/?shoes,nike" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+
+                        <div class="card-footer d-flex justify-content-center align-items-center">
+                            <span>Add quantity :- </span>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">+1</button>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">-1</button>
+                            <button type="button" class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <strong class='fs-4'>{item.title}</strong>
+                            <br />
+                            <strong>{item.desc}</strong>
+                        </div>
+                        <div>
+                            <img class='img-fluid' src="https://source.unsplash.com/495x170/?lv,nike" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+
+                        <div class="card-footer d-flex justify-content-center align-items-center">
+                            <span>Add quantity :- </span>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">+1</button>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">-1</button>
+                            <button type="button" class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <strong class='fs-4'>{item.title}</strong>
+                            <br />
+                            <strong>{item.desc}</strong>
+                        </div>
+                        <div>
+                            <img class='img-fluid' src="https://source.unsplash.com/495x170/?yeezy,nike" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+
+                        <div class="card-footer d-flex justify-content-center align-items-center">
+                            <span>Add quantity :- </span>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">+1</button>
+                            <button type="button" class="btn btn-sm btn-primary ms-2 px-3">-1</button>
+                            <button type="button" class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="col-sm-3 col-md-3 col-lg-3 my-2">
+                    <div class="card text-center">
+                        <div>
+                            <img class='img-fluid'
+                                src="https://source.unsplash.com/495x250/?CalvinKlein,dior,H&M,ParkAvenue" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+                        <div class="card-footer">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#shirtBtnModal"
+                                class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-3 my-2">
+                    <div class="card text-center">
+                        <div>
+                            <img class='img-fluid'
+                                src="https://source.unsplash.com/495x250/?CalvinKlein,dior,H&M,ParkAvenue" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+                        <div class="card-footer">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#shirtBtnModal"
+                                class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-3 my-2">
+                    <div class="card text-center">
+                        <div>
+                            <img class='img-fluid'
+                                src="https://source.unsplash.com/495x250/?CalvinKlein,dior,H&M,ParkAvenue" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+                        <div class="card-footer">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#shirtBtnModal"
+                                class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-3 my-2">
+                    <div class="card text-center">
+                        <div>
+                            <img class='img-fluid'
+                                src="https://source.unsplash.com/495x250/?CalvinKlein,dior,H&M,ParkAvenue" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+                        <div class="card-footer">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#shirtBtnModal"
+                                class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-3 my-2">
+                    <div class="card text-center">
+                        <div>
+                            <img class='img-fluid'
+                                src="https://source.unsplash.com/495x250/?CalvinKlein,dior,H&M,ParkAvenue" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+                        <div class="card-footer">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#shirtBtnModal"
+                                class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-3 my-2">
+                    <div class="card text-center">
+                        <div>
+                            <img class='img-fluid'
+                                src="https://source.unsplash.com/495x250/?CalvinKlein,dior,H&M,ParkAvenue" alt="" />
+                        </div>
+                        <strong class="py-1">Price :- {item.amount}</strong>
+                        <div class="card-footer">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#shirtBtnModal"
+                                class="btn btn-sm btn-success ms-2 px-5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" modal fade " id="shirtBtnModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header alert alert-warning">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Buy</h5>
+                                <button type="button" class="btn btn-sm btn-outline-danger mx-3"
+                                    data-bs-dismiss="modal"><i class="bi bi-x-octagon"></i> </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                Logic to select item by ID
+                                <br>
+                                <span>Add quantity :- </span>
+                                <button type="button" class="btn btn-sm btn-primary ms-2 px-3">+1</button>
+                                <button type="button" class="btn btn-sm btn-primary ms-2 px-3">-1</button>
+                                <br>
+                                <button type="button" data-bs-dismiss="modal"
+                                    class="btn btn-success w-75 fs-5  mt-3 ms-2 px-5"><i class="bi bi-bag-heart"></i>
+                                    Buy</button>
+                                <br>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="bg-light text-center text-white">
+
+        <div class="container p-4 pb-0">
+
+            <section class="mb-4">
+
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+            </section>
+
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
